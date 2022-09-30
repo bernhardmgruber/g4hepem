@@ -51,8 +51,8 @@ public:
 
     fSafety       = o.fSafety;
 
-    fID           = o.fID;
-    fIDParent     = o.fIDParent;
+//    fID           = o.fID;
+//    fIDParent     = o.fIDParent;
 
     fMCIndex      = o.fMCIndex;
 
@@ -168,17 +168,17 @@ public:
   double  GetSafety() const   { return fSafety; }
 
 
-  // ID
-  G4HepEmHostDevice
-  void    SetID(int id) { fID = id;   }
-  G4HepEmHostDevice
-  int     GetID() const { return fID; }
+//  // ID
+//  G4HepEmHostDevice
+//  void    SetID(int id) { fID = id;   }
+//  G4HepEmHostDevice
+//  int     GetID() const { return fID; }
 
   // Parent ID
-  G4HepEmHostDevice
-  void    SetParentID(int id) { fIDParent = id;   }
-  G4HepEmHostDevice
-  int     GetParentID() const { return fIDParent; }
+//  G4HepEmHostDevice
+//  void    SetParentID(int id) { fIDParent = id;   }
+//  G4HepEmHostDevice
+//  int     GetParentID() const { return fIDParent; }
 
   // Material-cut index
   G4HepEmHostDevice
@@ -225,8 +225,8 @@ public:
     fNumIALeft[1] = -1.0;
     fNumIALeft[2] = -1.0;
 
-    fID           =  -1;
-    fIDParent     =  -1;
+//    fID           =  -1;
+//    fIDParent     =  -1;
 
     fMCIndex      =  -1;
 
@@ -250,8 +250,8 @@ private:
   double   fNumIALeft[3];  // ioni, brem, (e+-e- annihilation) in case of e- (e+)
   double   fSafety;
 
-  int      fID;
-  int      fIDParent;
+//  int      fID;
+//  int      fIDParent;
 
   int      fMCIndex;
 
